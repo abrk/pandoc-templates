@@ -134,7 +134,20 @@ $endif$
 
 \begin{document}
 $if(title)$
+$if(titlegraphic)$
+\begin{frame}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \flushleft
+    \includegraphics{$titlegraphic$}
+    \column{0.5\textwidth}
+    \flushright
+    \titlepage
+  \end{columns}
+\end{frame}
+$else$
 \frame{\titlepage}
+$endif$
 $endif$
 
 $for(include-before)$
