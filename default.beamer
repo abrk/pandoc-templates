@@ -121,6 +121,10 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
+% Support for two-column slides
+\newcommand{\columnsbegin}{\begin{columns}}
+\newcommand{\columnsend}{\end{columns}}
+
 $if(title)$
 \title{$title$}
 $endif$
